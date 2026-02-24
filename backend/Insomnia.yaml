@@ -1,0 +1,53 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1771968483439
+  modified: 1771968483439
+  description: ""
+collection:
+  - url: http://localhost:3001/createCollection
+    name: createCollection
+    meta:
+      id: req_67e3b685aa9b4d5d941ce6d6543f10bc
+      created: 1771973394624
+      modified: 1771974896721
+      isPrivate: false
+      description: ""
+      sortKey: -1771973394624
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nameCollection": "Adventure"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1771968497925
+    modified: 1771968497925
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1771968497923
+    modified: 1771968497923
+    isPrivate: false
