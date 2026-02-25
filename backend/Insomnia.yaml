@@ -10,7 +10,7 @@ collection:
   - url: http://localhost:3001/createCollection
     name: createCollection
     meta:
-      id: req_67e3b685aa9b4d5d941ce6d6543f10bc
+      id: req_ef96302a8675459cb34e4e40b241e830
       created: 1771973394624
       modified: 1771974896721
       isPrivate: false
@@ -22,6 +22,37 @@ collection:
       text: |-
         {
         	"nameCollection": "Adventure"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3001/dropCollection
+    name: dropCollectionById
+    meta:
+      id: req_327dec65cddf4fe1ad01a7c327dbf036
+      created: 1771985387067
+      modified: 1771987900971
+      isPrivate: false
+      description: ""
+      sortKey: -1771973394524
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"idCollection": "1"
         }
     headers:
       - name: Content-Type

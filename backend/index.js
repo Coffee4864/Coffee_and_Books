@@ -11,6 +11,9 @@ app.get('/', (req, res) => {
 const createCollection = require('./controller/createCollection');
 app.use('/createCollection', createCollection)
 
+const dropCollection = require('./controller/dropCollection')
+app.use('/dropCollection', dropCollection)
+
 app.listen(3001, () => {
     console.log("Server is running")
 })
